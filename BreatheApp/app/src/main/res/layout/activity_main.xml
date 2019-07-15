@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/lotusImage"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
+        app:srcCompat="@drawable/breatheimg" />
+
+    <TextView
+        android:id="@+id/breathsTakenTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="24dp"
+
+        android:textSize="20sp"
+        android:text="@string/breaths" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lastBreathTxt"
+        android:text="@string/lastBreath"
+        android:layout_below="@+id/breathsTakenTxt"
+        android:textColor="@color/colorAccent"
+        android:textSize="24sp"
+        android:layout_marginLeft="20dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/todayMinutesTxt"
+        android:text="@string/minsToday"
+        android:layout_below="@+id/lastBreathTxt"
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp"
+        android:layout_marginLeft="24dp"
+        />
+
+
+    <TextView
+        android:id="@+id/currentTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/lotusImage"
+        android:layout_centerHorizontal="true"
+        android:text="@string/timer"
+        android:textColor="@color/colorAccent"
+        android:textSize="48sp"
+        android:layout_marginBottom="8dp"
+        />
+
+
+    <TextView
+        android:id="@+id/breathe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lotusImage"
+        android:layout_centerHorizontal="true"
+        android:text="@string/breathe"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:layout_marginBottom="8dp"
+        />
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        android:text="@string/start"
+        android:layout_margin="10dp"
+        android:id="@+id/startButton"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+
+        />
+
+
+
+</RelativeLayout>

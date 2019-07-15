@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Pikasso</string>
+    <string name="Color">Color</string>
+    <string name="Save">Save</string>
+    <string name="lineWidth">Line Width</string>
+    <string name="erase">Erase</string>
+    <string name="clear">Clear</string>
+    <string name="set_width">Set Width</string>
+    <string name="lable_alpha">Alpha</string>
+    <string name="lable_red">Red</string>
+    <string name="lable_green">Green</string>
+    <string name="lable_blue">Blue</string>
+    <string name="set_color">Set Pen Color</string>
+    <string name="set_background">Set Background</string>
+</resources>

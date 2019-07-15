@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">My Portfolio</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="about">
+
+     Hello my name is Michal Wolas. I am a Computer Science student in UCC,
+     I have just done my 2nd year. I am currently doing an android development course in my spare time.
+     \n \n My favourite areas of computer science are programming, Web and Mobile development,
+        designing and working with databases.
+
+    </string>
+
+    <string name="hobbies">
+  My hobbies outside of Computer Science include Fencing , I am the current Treasurer
+        for the club in UCC. \n I also enjoy video games and cycling in my spare time
+ </string>
+
+    <string name="work" >
+        During my Time in University and also in my own time I have made a few apps and websites.
+        For web development I am familiar with
+       both with python and php for database communication, and of course HTML5 and  CSS.
+        I have also used Javascript and its frameworks like JQuery.
+    </string>
+    <string name="projects">
+        Most of my projects can be found on my github ( micho213 ).
+    </string>
+    <string name="descProject">My github: \n\nSome screenshots of my work below:  </string>
+
+    <string name="myskills">
+        My Skills from university: \n \n
+        Languages: Python, Java, HTML + CSS + + Jquery and normal JS , php, Assembly (MIPS)\n
+        Knowledge in areas of Operating systems, Computer Architecture, Networking and Web servers.
+        How to write efficient algorithms along with necessary data structures. \n \n
+        Self-Learning: \n \n
+        I am currently learning android mobile development, I also enjoy making websites and have made a few as my own projects
+    </string>
+    <string name="email">
+        michalwolas@gmail.com
+    </string>
+    <string name="phone">
+        0838272874
+    </string>
+    <string name="github">
+        GitHub: micho213
+    </string>
+</resources>

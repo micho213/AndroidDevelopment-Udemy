@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/locationName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:hint="@string/locationHint"
+        android:inputType="textPersonName"
+    />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/locationCardView"
+        android:layout_below="@id/locationName"
+        android:layout_width="395dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="250dp"
+        android:layout_margin="6dp"
+        android:elevation="16dp"
+        app:cardBackgroundColor="@android:color/transparent"
+        >
+
+        <RelativeLayout
+            android:paddingTop="6dp"
+            android:paddingRight="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+
+                android:id="@+id/locationText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/weatherIcon"
+                android:layout_below="@id/currentDate"
+                android:text="@string/location_name"
+                android:layout_marginTop="2dp"
+                android:padding="10dp"
+                android:textSize="24sp"
+                android:textStyle="bold"
+
+
+                />
+
+            <ImageView
+                android:layout_margin="6dp"
+                android:id="@+id/weatherIcon"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_centerVertical="true"
+                />
+
+            <TextView
+                android:id="@+id/currentTempId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_toRightOf="@id/weatherIcon"
+                android:layout_below="@id/locationText"
+                android:textStyle="italic"
+                android:textSize="64sp"
+                android:layout_margin="6dp"
+                android:text="@string/temp"
+                />
+
+
+            <TextView
+                android:id="@+id/currentDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="1dp"
+                android:text="08/02/2019"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_below="@id/locationCardView"
+        android:layout_width="match_parent"
+        android:layout_margin="16dp"
+        android:layout_height="200dp">
+
+
+    </androidx.viewpager.widget.ViewPager>
+
+</RelativeLayout>

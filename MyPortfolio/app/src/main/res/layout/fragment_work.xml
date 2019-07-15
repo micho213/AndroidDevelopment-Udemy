@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:visibility="visible"
+    tools:context=".views.WorkFragment">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:cardElevation="16dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+
+                android:id="@+id/aboutText"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/work"
+                android:textSize="18sp"
+                app:fontFamily="@font/andika" />
+
+            <TextView
+                android:id="@+id/hobbies"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/aboutText"
+
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/projects"
+                android:textSize="18sp"
+                app:fontFamily="@font/andika" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/descProject"
+                android:layout_below="@id/hobbies"
+                android:layout_marginTop="32dp"
+                android:textSize="14sp"
+                />
+            <ImageButton
+                android:id="@+id/github"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_below="@id/hobbies"
+                android:layout_alignParentRight="true"
+                android:contentDescription="Github logo and link to my profile"
+                android:scaleType="centerInside"
+                android:onClick="gitPage"
+                android:src="@drawable/gitlogo" />
+
+
+            <ImageView
+                android:id="@+id/webed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/github"
+                android:layout_margin="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitStart"
+                android:src="@drawable/webed" />
+
+            <ImageView
+                android:id="@+id/fencing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/webed"
+                android:layout_margin="8dp"
+                android:scaleType="fitStart"
+                android:src="@drawable/fencingapp" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</ScrollView>

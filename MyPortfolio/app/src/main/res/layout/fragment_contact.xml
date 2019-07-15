@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.ContactFragment">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:cardElevation="16dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+    android:onClick="email"
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:textSize="18sp"
+                android:drawableLeft="@android:drawable/sym_action_email"
+                android:text="@string/email"
+                app:fontFamily="@font/andika" />
+            <TextView
+                android:onClick="call"
+                android:id="@+id/phone"
+                android:layout_below="@id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:textSize="18sp"
+                android:drawableLeft="@android:drawable/ic_menu_call"
+                android:text="@string/phone"
+                app:fontFamily="@font/andika" />
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_below="@id/phone"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="-36dp"
+                android:layout_toStartOf="@+id/githubAcc"
+                android:layout_toLeftOf="@+id/githubAcc"
+                android:src="@drawable/gitlogo"
+                android:onClick="gitPage"/>
+            <TextView
+                android:onClick="gitPage"
+                android:id="@+id/githubAcc"
+                android:layout_below="@id/phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="36dp"
+                android:textSize="18sp"
+                android:text="@string/github"
+                app:fontFamily="@font/andika" />
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

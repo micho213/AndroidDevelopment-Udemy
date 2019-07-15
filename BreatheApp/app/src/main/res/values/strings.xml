@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">BreatheApp</string>
+    <string name="breaths">7 breaths</string>
+    <string name="lastBreath">Last breathing exercise Yesterday</string>
+    <string name="minsToday">4 minutes today</string>
+    <string name="timer">1 MIN</string>
+    <string name="start">START</string>
+    <string name="breathe">breathe</string>
+</resources>

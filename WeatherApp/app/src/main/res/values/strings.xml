@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">WeatherApp</string>
+    <string name="locationHint">Enter a Location</string>
+    <string name="location_name">Location Name</string>
+    <string name="temp">25&#x2103;</string>
+    <string name="forecastTemp">Temp:</string>
+    <string name="forecastDate">05/07/2019</string>
+    <string name="forecastLow">Low</string>
+    <string name="forecastHigh">High</string>
+    <string name="forecastDesc">Mostly cloudy</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
